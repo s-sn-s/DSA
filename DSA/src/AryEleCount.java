@@ -14,11 +14,12 @@ public class AryEleCount {
 		for (int i = 0; i < a.length; i++) {
 			int count = 1;
 			int[] sa = Arrays.copyOfRange(a, i + 1, a.length);
+			
 			if (ali.contains(a[i])) {
 				continue;
 			}
 			for (int j : sa) {
-
+				
 				ali.add(a[i]);
 
 				if (a[i] == j) {
