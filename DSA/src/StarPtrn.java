@@ -5,8 +5,9 @@ public class StarPtrn {
 		// TODO Auto-generated method stub
 		//rightAngle(6);
 		//rightAngleMirored(6);
-		pyramid(6);
-		revPyramid(6);
+		//pyramid(6);
+		//revPyramid(6);
+		diamond(6);
 	}
 	
 	public static void rightAngle(int row) {
@@ -59,6 +60,21 @@ public class StarPtrn {
 			}
 			System.out.println();
 		}
+	}
+	
+	public static void diamond(int k) {
+	int flow =0;
+		for(int i =0;i<k;i++){
+			for(int j=flow;j<=k;j++) {
+				System.out.print(" ");
+			}		
+			for(int j=flow;j<=k*2;j++) {
+				System.out.print("*");
+			}
+			if(i==k/2) {flow=k;}
+		}
+		System.out.println();
+
 	}
 }
 
