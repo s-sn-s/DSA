@@ -6,7 +6,7 @@ public class sortArray {
 		System.out.println("Unsorted");
 		for(double i:ia)System.out.print(i + " ");
 		System.out.println();
-		System.out.println("sorted");
+		//System.out.println("sorted");
 		for(double i:sortIt(ia))System.out.print(i + " ");
 	}
 	
@@ -22,9 +22,11 @@ public class sortArray {
 			sortMe = 0;
 			for(int i = 0;i<ia.length-1;i++) {
 				if(ia[i]>ia[i+1]) {
+					System.out.println(
+							"Swaped " + ia[i+1] + " with " + ia[i]);
 					temp = ia[i];
 					ia[i] = ia[i+1];
-					ia[i+1] = ia[i];
+					ia[i+1] = temp;
 					sortMe++;
 				}
 			}
